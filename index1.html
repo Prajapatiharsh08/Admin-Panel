@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="side-menu">
+            <div class="logo">
+                <img src="https://themesbrand.com/skote-mvc/layouts/assets/images/logo-light.png" alt="">
+            </div>
+
+            <ul class="side-menu-list">
+                <li class="list-name">MENU</li>
+                <li class="dashboard">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="icon-name">
+                            Dashboards
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Default</li>
+                        <li>Saas</li>
+                        <li>Crypto</li>
+                        <li>Blog</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".dashboard span i").click(function () {
+                                $(".dashboard ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+
+                <li class="layouts">
+                    <a href="#">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span class="icon-name">
+                            Layouts
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Vertical</li>
+                        <li>Horizontal</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".layouts span i").click(function () {
+                                $(".layouts ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="list-name">APPS</li>
+                <li class="apps">
+                    <a href="#">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="icon-name">
+                            Calendars
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>TUI Calender</li>
+                        <li>Full Calender</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".apps span i").click(function () {
+                                $(".apps ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="icon-name">
+                            Chat
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-file"></i>
+                        <span class="icon-name">
+                            File Manager
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="ecom">
+                    <a href="#">
+                        <i class="fa-solid fa-store"></i>
+                        <span class="icon-name">
+                            Ecommerce
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Products</li>
+                        <li>Product Details</li>
+                        <li>Orders</li>
+                        <li>Customers</li>
+                        <li>Cart</li>
+                        <li>Checkout</li>
+                        <li>Shops</li>
+                        <li>Add Product</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".ecom span i").click(function () {
+                                $(".ecom ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="crpto">
+                    <a href="#">
+                        <i class="fa-solid fa-bitcoin-sign"></i>
+                        <span class="icon-name">
+                            Crypto
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Wallet</li>
+                        <li>Buy/Sell</li>
+                        <li>Exchange</li>
+                        <li>Lending</li>
+                        <li>Orders</li>
+                        <li>KYC Application</li>
+                        <li>ICO Landing</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".crpto span i").click(function () {
+                                $(".crpto ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="icon-name">
+                            E-mail
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="invoice">
+                    <a href="index2.html">
+                        <i class="fa-solid fa-receipt"></i> <span class="icon-name">
+                            Invoices
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Invoice List</li>
+                        <li>Invoice Details</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".invoice span i").click(function () {
+                                $(".invoice ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="project">
+                    <a href="#">
+                        <i class="fa-solid fa-briefcase"></i> <span class="icon-name">
+                            Projects
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Projects Grid</li>
+                        <li>Projects List</li>
+                        <li>Projects Overview</li>
+                        <li>Create New</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".project span i").click(function () {
+                                $(".project ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="task">
+                    <a href="#">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span class="icon-name">
+                            Tasks
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Tas List</li>
+                        <li>Kanban Board</li>
+                        <li>Create Task</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".task span i").click(function () {
+                                $(".task ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="cont">
+                    <a href="#">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span class="icon-name">
+                            Contacts
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Users Grid</li>
+                        <li>Users List</li>
+                        <li>Proile</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".cont span i").click(function () {
+                                $(".cont ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="Blog">
+                    <a href="#">
+                        <i class="fa-solid fa-blog"></i>
+                        <span class="icon-name">
+                            Blog
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Blog List</li>
+                        <li>Blog Grid</li>
+                        <li>Blog Details</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".Blog span i").click(function () {
+                                $(".Blog ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="list-name">PAGES</li>
+                <li class="Authent">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <span class="icon-name">
+                            Authentication
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Login </li>
+                        <li>Login 2</li>
+                        <li>Register</li>
+                        <li>Register 2</li>
+                        <li>Recver Password</li>
+                        <li>Recver Password 2</li>
+                        <li>Lock Screen</li>
+                        <li>Lock Screen 2</li>
+                        <li>Confirm E-mail</li>
+                        <li>Confirm E-mail 2</li>
+                        <li>E-mail Verification</li>
+                        <li>E-mail Verification 2</li>
+                        <li>Two-Step Verification</li>
+                        <li>Two-Step Verification 2</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".Authent span i").click(function () {
+                                $(".Authent ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="utility">
+                    <a href="#">
+                        <i class="fa-regular fa-file"></i>
+                        <span class="icon-name">
+                            Utility
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul style="line-height: 40px; display: none;" class="drop-down-list">
+                        <li>Sarter Page </li>
+                        <li>Maintenance</li>
+                        <li>Coming Soon</li>
+                        <li>Timeline</li>
+                        <li>FAQs</li>
+                        <li>Pricing</li>
+                        <li>Error 404</li>
+                        <li>Error 500</li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            $(".utility span i").click(function () {
+                                $(".utility ul ").toggle()
+                            })
+                        })
+
+                    </script>
+                </li>
+                <li class="list-name">COMPONENTS</li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-mask-ventilator"></i> <span class="icon-name">
+                            UI Elements
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-file-waveform"></i> <span class="icon-name">
+                            Forms
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-table"></i>
+                        <span class="icon-name">
+                            Tables
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="icon-name">
+                            Charts
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <script>
+                $(document).ready(function () {
+                    $(".main-page .toggle-menu i").click(function () {
+                        $(".side-menu").css("width", "70px")
+                        $(".side-menu-list .list-name,.icon-name").css("display", "none")
+                        $(".side-menu-list a").css("margin", "5px")
+                    })
+                })
+
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $(".main .side-menu").click(function () {
+                        $(".side-menu").css("width", "250px")
+                        $(".side-menu-list .list-name,.icon-name").css("display", "block")
+                        $(".side-menu-list a").css("display", "flex")
+                        $(".side-menu-list ").css("gap", "30px")
+                        $(".side-menu-list a").css("margin-left", "10px")
+                    })
+                })
+
+            </script>
+        </div>
+        <div class="main-page">
+
+            <header>
+                <div class="toggle-menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <input type="search" name="" id="" placeholder="Search...">
+                    <p>Mega Menu</p>
+                </div>
+
+                <div class="nav-menu">
+                    <img src="https://themesbrand.com/skote-mvc/layouts/assets/images/flags/us.jpg" alt="">
+                    <span class="material-symbols-outlined">
+                        widgets
+                    </span>
+                    <span class="material-symbols-outlined">
+                        fullscreen
+                    </span>
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                </div>
+            </header>
+
+            <div class="graph">
+                <main class="container">
+                    <h2>Chart of Selling Mobile and Laptops</h2>
+                    <div>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </main>
+
+                <script>
+                    var ctx = document.getElementById("barChart").getContext('2d');
+                    var barChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+                            datasets: [{
+                                label: 'Laptop',
+                                data: [12, 19, 3, 17, 28, 24, 7, 15, 18, 8],
+                                backgroundColor: "#556ee6"
+                            }, {
+                                label: 'Mobile',
+                                data: [27, 25, 5, 5, 20, 3, 10, 12, 14, 6],
+                                backgroundColor: "#f1b44c"
+                            }]
+                        }
+                    });
+                </script>
+            </div>
+
+            <div class="table-body">
+                <h2>Latest Transaction</h2>
+
+                <div class="table-content">
+                    <table>
+                        <tr class="row">
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>Order ID</th>
+                            <th>Billing Name</th>
+                            <th>Date</th>
+                            <th>Total</th>
+                            <th>Payment Status</th>
+                            <th>Payment Method</th>
+                            <th>View Details</th>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2540</td>
+                            <td>Neal Matthews</td>
+                            <td>07 Oct, 2019</td>
+                            <td>$400</td>
+                            <td style="color: green;">Paid</td>
+                            <td>Mastercard</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2541</td>
+                            <td>Jamal Burnett</td>
+                            <td>07 Oct, 2019</td>
+                            <td>$380</td>
+                            <td style="color: rgb(221, 77, 77);">Chargeback</td>
+                            <td>Visa</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2542</td>
+                            <td>Juan Mitchell</td>
+                            <td>06 Oct, 2019</td>
+                            <td>$384</td>
+                            <td style="color: green;">Paid</td>
+                            <td>Paypal</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2543</td>
+                            <td>Barry Dick</td>
+                            <td>05 Oct, 2019</td>
+                            <td>$412</td>
+                            <td style="color: green;">Paid</td>
+                            <td>Mastercard</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2544</td>
+                            <td>Ronald Taylor</td>
+                            <td>04 Oct, 2019</td>
+                            <td>$404</td>
+                            <td style="color: rgb(231, 197, 45);">Refund</td>
+                            <td>Visa</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2545</td>
+                            <td>Jacob Hunter</td>
+                            <td>04 Oct, 2019</td>
+                            <td>$392</td>
+                            <td style="color: green;">Paid</td>
+                            <td>Paypal</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2544</td>
+                            <td>Ronald Taylor</td>
+                            <td>04 Oct, 2019</td>
+                            <td>$404</td>
+                            <td style="color: rgb(231, 197, 45);">Refund</td>
+                            <td>Visa</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2544</td>
+                            <td>Ronald Taylor</td>
+                            <td>04 Oct, 2019</td>
+                            <td>$404</td>
+                            <td style="color: rgb(231, 197, 45);">Refund</td>
+                            <td>Mastercard</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2544</td>
+                            <td>Ronald Taylor</td>
+                            <td>04 Oct, 2019</td>
+                            <td>$404</td>
+                            <td style="color: rgb(231, 197, 45);">Refund</td>
+                            <td>Mastercard</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2544</td>
+                            <td>Ronald Taylor</td>
+                            <td>04 Oct, 2019</td>
+                            <td>$404</td>
+                            <td style="color: rgb(231, 197, 45);">Refund</td>
+                            <td>COD</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2544</td>
+                            <td>Ronald Taylor</td>
+                            <td>04 Oct, 2019</td>
+                            <td>$404</td>
+                            <td style="color: rgb(231, 197, 45);">Refund</td>
+                            <td>Paid</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>#SK2544</td>
+                            <td>Ronald Taylor</td>
+                            <td>04 Oct, 2019</td>
+                            <td>$404</td>
+                            <td style="color: rgb(231, 197, 45);">Refund</td>
+                            <td>Visa</td>
+                            <td><button>View Details</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <p>2024 © Skote.</p>
+                <h4>Design & Develop by Harsh Prajapati </h4>
+            </div>
+        </div>
+
+        <!-- <script>
+            $(document).ready(function () {
+                $('.main .main-page .toggle-menu i').click(function () {
+                    $(".side-menu").toggle()
+                })
+            })
+        </script> -->
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

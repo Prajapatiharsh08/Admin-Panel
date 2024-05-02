@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+.main {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.main .side-menu {
+    background-color: #2a3042;
+    height: auto;
+    max-width: 250px;
+    padding: 0px 24px;
+    position: relative;
+
+}
+
+.main .side-menu .logo {
+    height: 70px;
+    width: 200px;
+    text-align: center;
+}
+
+.main .side-menu img {
+    height: 20px;
+    width: 85px;
+    margin: 25px 0px;
+    overflow: hidden;
+    color: white;
+}
+
+.main .side-menu .side-menu-list {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
+
+}
+
+.main .side-menu .side-menu-list li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    margin: 0px 0px 0px 10px;
+
+}
+
+.main .side-menu .side-menu-list li a .icon-name {
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.main .side-menu .side-menu-list a .icon-name i {
+    margin-left: 60px;
+    position: absolute;
+    left: 100px;
+}
+
+.main .side-menu .side-menu-list .list-name {
+    color: #6a7187;
+    font-size: 12px;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: #1d2339;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #a6b0cf;
+}
+
+header .toggle-menu i {
+    font-size: 20px;
+    z-index: 100;
+    margin-left: 30px;
+}
+
+.width {
+    max-width: 70px;
+}
+
+.main-page {
+    width: 100%;
+    background-color: #181d2f;
+}
+
+.main-page .toggle-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-page .toggle-menu input {
+    height: 40px;
+    width: 240px;
+    border-radius: 20px;
+    border: none;
+    background-color: #242a3f;
+    text-align: center;
+    font-size: 15px;
+}
+
+.main-page .nav-menu img {
+    height: 18px;
+    width: 24px;
+}
+
+.main-page .nav-menu {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    right: 20px;
+}
+
+.main-page-content {
+    position: relative;
+}
+
+.main-page-content h2 {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+.table-body {
+    height: auto;
+    width: 1600px;
+    background-color: #262d41;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.table-body h2 {
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.table-content table .row {
+    background-color: #32394e;
+    height: 40px;
+    color: #a6b0cf;
+    margin-left: 20px;
+}
+
+.table-content table tr td {
+    font-size: 16px;
+    color: #a6b0cf;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+
+.table-content table tr button {
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4c6bdc;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.table-content table tr button:hover {
+    background-color: #5b78df;
+}
+
+.table-content table {
+    margin-left: 10px;
+}
+
+.table-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-content table {
+    height: 38vh;
+    width: 1550px;
+}
+
+.footer {
+    height: 8vh;
+    background-color: #262d41;
+    width: 100%;
+    /* margin-left: 30px; */
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.footer p {
+    padding: 25px;
+    color: #a6b0cf;
+}
+
+.footer h4 {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: #a6b0cf;
+}
+
+.side-menu-list .icon-name i:hover {
+    rotate: 360deg;
+    transition: all linear 0.5s;
+
+}
+
+.drop-down-list {
+    margin-left: 40px;
+    font-size: 15px;
+    color: #6a7187;
+    cursor: pointer;
+}
+
+.drop-down-list li:hover {
+    transition: all linear .2s;
+    scale: 1.1;
+
+}
+
+.big-box {
+    z-index: 1;
+}
+
+.big-box .content .image img {
+    height: 20vh;
+    width: 400px;
+    position: absolute;
+    top: 360px;
+    left: 220px;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 15px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #a6b0cf;
+}
